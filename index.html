@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - มาฆะ มุกดาประกร</title>
+    <!-- เรียกใช้ Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* ตั้งค่าให้เลื่อนหน้าจอแบบนุ่มนวลเวลาคลิก Navbar */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* กำหนดขนาดและทำรูปโปรไฟล์เป็นวงกลม */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #0d6efd;
+        }
+        /* เพิ่มระยะห่างให้แต่ละ Section เพื่อไม่ให้โดน Navbar บังตอนเลื่อน */
+        section {
+            padding-top: 80px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+
+    <!-- Navbar (Responsive & Toggle) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bas.Resume</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Anchor Links ไปยัง Section ต่างๆ -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="container text-center" style="margin-top: 100px;">
+        <!-- รูปโปรไฟล์วงกลม (ใช้ไฟล์ bas.jpeg) -->
+        <img src="bas.jpeg" alt="Profile Picture" class="rounded-circle profile-img mb-3 shadow">
+        
+        <!-- ชื่อ-นามสกุลแบบ h1 -->
+        <h1 class="fw-bold">มาฆะ มุกดาประกร</h1>
+        
+        <!-- สาขาวิชาเป็นตัวเอียง (em) และคณะ -->
+        <p class="fs-5">คณะวิศวกรรมศาสตร์และเทคโนโลยี <em>สาขา CAI</em></p>
+        
+        <!-- ลิงก์ไปยังเว็บไซต์สถาบัน -->
+        <p><a href="http://pim.ac.th" target="_blank" class="text-decoration-none">สถาบันการจัดการปัญญาภิวัฒน์</a></p>
+    </header>
+
+    <div class="container">
+        <!-- เส้นแบ่งย่อหน้า -->
+        <hr class="my-5">
+
+        <!-- Section: About Me -->
+        <section id="about">
+            <h2 class="mb-4 text-primary">About Me (เกี่ยวกับตัวฉัน)</h2>
+            <p class="lead">
+                นาย มาฆะ มุกดาประกร ชื่อเล่น บาส เป็นนักศึกษาของสถาบันการจัดการปัญญาภิวัฒน์ อายุ 19 ปี (ส่วนสูง 170+ ซม. น้ำหนัก 60+ กก.) ชอบเล่นบาสเกตบอลเป็นชีวิตจิตใจ ชอบเล่นเกมบาส และชอบดูคลิปเกี่ยวกับบาส ชอบบ่นว่าสถาบันไม่มีโดมเลยแดดร้อนมากเวลาเล่นช่วงบ่ายๆ... ไม่เก่งอะไรสักอย่างเลยในชีวิตนี้ อยู่จุดต่ำสุดของมนุษยชาติ เป็นผู้ถูกล่า อ่อนกว่าเด็กแต่เก่งกว่าทารก!
+            </p>
+        </section>
+
+        <!-- เส้นแบ่งย่อหน้า -->
+        <hr>
+
+        <!-- Section: Education -->
+        <section id="education">
+            <h2 class="mb-4 text-primary">Education (การศึกษา)</h2>
+            <ul>
+                <li><strong>ระดับปริญญาตรี:</strong> คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขา CAI, สถาบันการจัดการปัญญาภิวัฒน์ (กำลังศึกษา)</li>
+                <li><strong>ระดับประกาศนียบัตรวิชาชีพ (ปวช.):</strong> ศูนย์การเรียนปัญญาภิวัฒน์ (ศูนย์สำโรง)</li>
+            </ul>
+        </section>
+
+        <!-- เส้นแบ่งย่อหน้า -->
+        <hr>
+
+        <!-- Section: Skills -->
+        <!-- ทำ Responsive: Desktop 4 แถว (col-lg-3), Tablet 2 แถว (col-md-6), มือถือ 1 แถว (col-12) -->
+        <section id="skills">
+            <h2 class="mb-4 text-primary">Skills (ทักษะความสามารถ)</h2>
+            <p class="text-muted">* ถึงจะบอกว่าไม่มีทักษะอะไรเลย แต่ก็ขอแยกหมวดหมู่ให้ครบตาม Requirement ครับ</p>
+            <div class="row g-4 text-center">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h5>ทักษะกีฬา</h5>
+                        <p>เล่นบาสเกตบอลเป็นชีวิตจิตใจ แม้แดดจะร้อนก็ไม่หวั่น</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h5>ทักษะ E-Sports</h5>
+                        <p>เชี่ยวชาญการเล่นเกมบาสและวิเคราะห์คลิปบาสเกตบอล</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h5>ทักษะการเอาตัวรอด</h5>
+                        <p>เป็นผู้ถูกล่าที่แข็งแกร่ง (เก่งกว่าทารกแน่นอน)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="p-3 border rounded bg-light">
+                        <h5>ทักษะการเรียนรู้</h5>
+                        <p>ยังทำอะไรไม่ค่อยเป็น แต่พร้อมเรียนรู้กับอาจารย์เสมอ!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- เส้นแบ่งย่อหน้า -->
+        <hr>
+
+        <!-- Section: Contact -->
+        <section id="contact">
+            <h2 class="mb-4 text-primary">Contact (ช่องทางการติดต่อ)</h2>
+            <!-- ใช้ Ordered List (ol) ตามข้อกำหนด -->
+            <ol class="fs-5">
+                <li>
+                    <strong>อีเมล:</strong> bas_survival
+                    <!-- ใช้รูปแทนสัญลักษณ์ @ เพื่อป้องกัน Spam ตามโจทย์ -->
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><text x='0' y='20' font-size='18' font-weight='bold'>@</text></svg>" width="16" height="16" alt="at">
+                    fakemail.com
+                </li>
+                <li><strong>เบอร์โทรศัพท์:</strong> 007-150-00545 (สายลับเร่ร่อน)</li>
+                <li><strong>ที่อยู่:</strong> ไม่มีหลักแหล่งเพราะเป็นคนเร่ร่อน</li>
+                <li><strong>Instagram:</strong> BAslnwza007</li>
+            </ol>
+        </section>
+    </div>
+
+    <!-- เรียกใช้ Bootstrap 5 JS (สำหรับ Hamburger Menu ให้ทำงานได้) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
